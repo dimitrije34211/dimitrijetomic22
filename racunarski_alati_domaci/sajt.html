@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dimitrije Tomić – lični veb sajt</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20300%20300%22%3E%3Ccircle%20cx=%22150%22%20cy=%22150%22%20r=%22146%22%20fill=%22%23e2001a%22/%3E%20%3Ccircle%20cx=%22150%22%20cy=%22150%22%20r=%22146%22%20fill=%22none%22%20stroke=%22%23fff%22%20stroke-width=%224%22/%3E%20%3Ccircle%20cx=%22150%22%20cy=%22150%22%20r=%22107%22%20fill=%22%23fff%22/%3E%20%3Ccircle%20cx=%22150%22%20cy=%22150%22%20r=%22101%22%20fill=%22%23e2001a%22/%3E%20%3Cpath%20id=%22arcTop%22%20d=%22M34,150%20A116,116%200%200%201%20266,150%22%20fill=%22none%22/%3E%20%3Cpath%20id=%22arcBot%22%20d=%22M12,150%20A138,138%200%200%200%20288,150%22%20fill=%22none%22/%3E%20%3Ctext%20font-family=%22Georgia,serif%22%20font-weight=%22bold%22%20font-size=%2221%22%20letter-spacing=%221%22%20fill=%22%23fff%22%20text-anchor=%22middle%22%3E%20%3CtextPath%20href=%22%23arcTop%22%20startOffset=%2250%25%22%20id=%22crestName%22%3EDIMITRIJE%20TOMI%C4%86%3C/textPath%3E%3C/text%3E%20%3Ctext%20font-family=%22Georgia,serif%22%20font-weight=%22bold%22%20font-size=%2217%22%20letter-spacing=%221%22%20fill=%22%23fff%22%20text-anchor=%22middle%22%3E%20%3CtextPath%20href=%22%23arcBot%22%20startOffset=%2250%25%22%20id=%22crestIdx%22%3EINDEKS%2022/2026%3C/textPath%3E%3C/text%3E%20%3Ccircle%20cx=%2223%22%20cy=%22150%22%20r=%224.5%22%20fill=%22%23fff%22/%3E%3Ccircle%20cx=%22277%22%20cy=%22150%22%20r=%224.5%22%20fill=%22%23fff%22/%3E%20%3Cpath%20fill=%22%23fff%22%20d=%22M118%20232%20L122%20192%20C111%20176%20107%20152%20111%20130%20C115%20102%20140%2084%20165%2088%20C186%2092%20198%20108%20198%20126%20L207%20143%20L199%20149%20L203%20159%20L197%20167%20L199%20177%20C197%20187%20187%20191%20179%20189%20L177%20207%20L192%20232%20Z%22/%3E%20%3Cpath%20fill=%22%23e2001a%22%20d=%22M178%20129%20q6%20-3%2012%200%20q-6%204%20-12%200z%22/%3E%20%3Cg%20fill=%22%23f2c14e%22%20stroke=%22%23e2001a%22%20stroke-width=%221.2%22%3E%20%3Cellipse%20cx=%22114%22%20cy=%22132%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(-80%20114%20132)%22/%3E%20%3Cellipse%20cx=%22119%22%20cy=%22114%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(-62%20119%20114)%22/%3E%20%3Cellipse%20cx=%22130%22%20cy=%2299%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(-45%20130%2099)%22/%3E%20%3Cellipse%20cx=%22145%22%20cy=%2290%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(-25%20145%2090)%22/%3E%20%3Cellipse%20cx=%22161%22%20cy=%2287%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(-6%20161%2087)%22/%3E%20%3Cellipse%20cx=%22176%22%20cy=%2292%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(20%20176%2092)%22/%3E%20%3Cellipse%20cx=%22188%22%20cy=%22102%22%20rx=%2210%22%20ry=%224.5%22%20transform=%22rotate(40%20188%20102)%22/%3E%20%3C/g%3E%3C/svg%3E">
+<style>
+  :root{--bg:#f3f1ec;--ink:#1f2a36;--mute:#5d6b7a;--card:#fff;--line:#d9d5cb;--acc:#c8102e;--acc2:#b8892b;--hh:200px}
+  @media (prefers-color-scheme:dark){:root{--bg:#161b21;--ink:#e8e6e1;--mute:#9aa7b4;--card:#1f262e;--line:#33404d;--acc:#ff5a6e;--acc2:#d9ad4f}}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + 12px)}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Times New Roman",serif}
+  h1,h2,h3,nav{font-family:"Trebuchet MS",Verdana,sans-serif}
+
+  /* Header: zalepljen na vrhu, grb centriran unutar njega */
+  header{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:3px solid var(--acc);box-shadow:0 2px 10px rgba(0,0,0,.12)}
+  .brand{display:flex;justify-content:center;padding-top:10px}
+  .crest{width:130px;height:130px;display:block;transition:width .25s,height .25s}
+  header.small .crest{width:56px;height:56px}
+  header.small .brand{padding-top:4px}
+  nav{max-width:960px;margin:auto;padding:8px 20px 10px;display:flex;gap:6px 22px;flex-wrap:wrap;align-items:center;justify-content:center}
+  nav strong{color:var(--acc)}
+  nav a{color:var(--ink);text-decoration:none;font-size:15px;padding:2px 0}
+  nav a:hover,nav a:focus-visible{color:var(--acc);text-decoration:underline}
+
+  main{max-width:960px;margin:auto;padding:0 20px 60px}
+  section{padding:48px 0 12px}
+  h2{font-size:26px;margin:0 0 18px;border-bottom:2px solid var(--acc2);display:inline-block;padding-bottom:4px}
+  .hero{display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:center;padding-top:40px}
+  .photo{width:240px;height:300px;border-radius:6px;border:1px solid var(--line);background:var(--card);object-fit:cover;display:block}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 6px}
+  .hero p{margin:4px 0;color:var(--mute)}
+  .hero .idx{font-size:20px;color:var(--acc);font-weight:bold}
+  table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line)}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{width:34%;font-family:"Trebuchet MS",Verdana,sans-serif;font-size:15px;color:var(--mute);font-weight:600}
+  a{color:var(--acc)}
+  .crest-big{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+  .crest-big svg{width:min(320px,90%);height:auto}
+  .crest-big p{max-width:620px;margin:0}
+  .hobby{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none}
+  .hobby li{background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:20px;font-size:15px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+  .btn{display:inline-block;padding:8px 16px;border:0;background:var(--acc);color:#fff;cursor:pointer;font:15px Verdana,sans-serif;text-decoration:none;border-radius:3px}
+  .btn.alt{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+  .btn:focus-visible,a:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+  .guide ol{padding-left:0;list-style:none;counter-reset:s}
+  .guide li.step{counter-increment:s;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);padding:16px 18px;margin-bottom:18px}
+  .guide li.step h3{margin:0 0 6px;font-size:18px}
+  .guide li.step h3::before{content:"Korak " counter(s) ". ";color:var(--acc)}
+  .guide code{background:var(--bg);padding:1px 6px;border:1px solid var(--line);font-size:.92em}
+  .shot{margin:12px 0 0;border:2px dashed var(--line);padding:26px 12px;text-align:center;color:var(--mute);font-size:14px;font-family:Verdana,sans-serif}
+  .guide img{max-width:100%;border:1px solid var(--line);margin-top:12px;display:block}
+  .note{background:var(--card);border:1px solid var(--line);padding:12px 16px;font-size:15px;color:var(--mute)}
+  .data{width:auto;margin:8px 0}
+  .data th,.data td{width:auto;padding:5px 14px;font-size:15px}
+  .calc{background:var(--card);border:1px solid var(--line);padding:16px 18px;margin-top:8px}
+  .calc select{padding:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+  footer{border-top:1px solid var(--line);text-align:center;padding:22px;color:var(--mute);font-size:14px}
+  @media(max-width:700px){.hero{grid-template-columns:1fr;text-align:center}.photo{margin:auto}.hero h1{font-size:32px}.crest{width:96px;height:96px}}
+  @media(prefers-reduced-motion:reduce){.crest{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="crest" viewBox="0 0 300 300">
+    <circle cx="150" cy="150" r="146" fill="#e2001a"/>
+    <circle cx="150" cy="150" r="146" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle cx="150" cy="150" r="107" fill="#fff"/>
+    <circle cx="150" cy="150" r="101" fill="#e2001a"/>
+    <path id="arcTop" d="M34,150 A116,116 0 0 1 266,150" fill="none"/>
+    <path id="arcBot" d="M12,150 A138,138 0 0 0 288,150" fill="none"/>
+    <text font-family="Georgia,serif" font-weight="bold" font-size="21" letter-spacing="1" fill="#fff" text-anchor="middle">
+      <textPath href="#arcTop" startOffset="50%" id="crestName">DIMITRIJE TOMIĆ</textPath></text>
+    <text font-family="Georgia,serif" font-weight="bold" font-size="17" letter-spacing="1" fill="#fff" text-anchor="middle">
+      <textPath href="#arcBot" startOffset="50%" id="crestIdx">INDEKS 22/2026</textPath></text>
+    <circle cx="23" cy="150" r="4.5" fill="#fff"/><circle cx="277" cy="150" r="4.5" fill="#fff"/>
+    <!-- profil glave sportiste (pobednika) sa lovorovim vencem -->
+    <path fill="#fff" d="M118 232 L122 192 C111 176 107 152 111 130 C115 102 140 84 165 88 C186 92 198 108 198 126 L207 143 L199 149 L203 159 L197 167 L199 177 C197 187 187 191 179 189 L177 207 L192 232 Z"/>
+    <path fill="#e2001a" d="M178 129 q6 -3 12 0 q-6 4 -12 0z"/>
+    <g fill="#f2c14e" stroke="#e2001a" stroke-width="1.2">
+      <ellipse cx="114" cy="132" rx="10" ry="4.5" transform="rotate(-80 114 132)"/>
+      <ellipse cx="119" cy="114" rx="10" ry="4.5" transform="rotate(-62 119 114)"/>
+      <ellipse cx="130" cy="99" rx="10" ry="4.5" transform="rotate(-45 130 99)"/>
+      <ellipse cx="145" cy="90" rx="10" ry="4.5" transform="rotate(-25 145 90)"/>
+      <ellipse cx="161" cy="87" rx="10" ry="4.5" transform="rotate(-6 161 87)"/>
+      <ellipse cx="176" cy="92" rx="10" ry="4.5" transform="rotate(20 176 92)"/>
+      <ellipse cx="188" cy="102" rx="10" ry="4.5" transform="rotate(40 188 102)"/>
+    </g>
+  </symbol>
+</svg>
+
+<header id="hdr">
+  <div class="brand"><svg class="crest" role="img" aria-label="Grb studenta Dimitrije Tomić"><use href="#crest"/></svg></div>
+  <nav>
+    <strong class="js-name">Dimitrije Tomić</strong>
+    <a href="#o-meni">O meni</a>
+    <a href="#grb">Moj grb</a>
+    <a href="#hobi">Hobi</a>
+    <a href="#uputstvo">Uputstvo: COUNTIF</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="hero">
+    <img class="photo" src="slika.jpg" alt="Fotografija studenta"
+         onerror="this.removeAttribute('src');this.alt='Ovde ide tvoja slika (slika.jpg)';this.style.display='flex';this.style.alignItems='center';this.style.justifyContent='center';this.style.textAlign='center';this.style.padding='12px'">
+    <div>
+      <h1 class="js-name">Dimitrije Tomić</h1>
+      <p class="idx">Broj indeksa: <span class="js-index">22/2026</span></p>
+      <p>Student, predmet: Računarski alati</p>
+    </div>
+  </div>
+
+  <section id="o-meni">
+    <h2>Osnovni podaci</h2>
+    <table>
+      <tr><th>Ime i prezime</th><td class="js-name">Dimitrije Tomić</td></tr>
+      <tr><th>Broj indeksa</th><td class="js-index">22/2026</td></tr>
+      <tr><th>Datum rođenja</th><td>24. maj 2007.</td></tr>
+      <tr><th>Mesto rođenja</th><td>Kragujevac</td></tr>
+      <tr><th>Osnovno obrazovanje</th><td>OŠ „Svetozar Marković“</td></tr>
+      <tr><th>Srednje obrazovanje</th><td>Prva kragujevačka gimnazija (smer: prirodno-matematički)</td></tr>
+      <tr><th>E-mail</th><td>dimitrije.tomic225@gmail.com (<a href="#kontakt">kontakt</a>)</td></tr>
+    </table>
+  </section>
+
+  <section id="grb">
+    <h2>Moj grb</h2>
+    <div class="crest-big">
+      <svg viewBox="0 0 300 300" role="img" aria-label="Grb studenta, uvećan prikaz"><use href="#crest"/></svg>
+    </div>
+  </section>
+
+  <section id="hobi">
+    <h2>Hobi i interesovanja</h2>
+    <ul class="hobby">
+      <li>Filmovi</li><li>Čitanje fikcije</li><li>Teretana</li><li>Astronomija</li><li>Automobili</li><li>Lični projekti iz elektronike</li>
+    </ul>
+  </section>
+
+  <section id="uputstvo" class="guide">
+    <h2>Uputstvo: brojanje podataka funkcijom COUNTIF u programu Excel</h2>
+    <p>Funkcija <b>COUNTIF</b> broji ćelije u zadatom opsegu koje ispunjavaju jedan uslov. Sintaksa je <code>=COUNTIF(opseg; uslov)</code>. Na primeru ocena ćemo izbrojati koliko studenata ima određenu ocenu, koliko ih ima ocenu 9 ili višu i koliko se puta pojavljuje jedno ime.</p>
+  
+    <p><b>Podaci koje ćemo uneti (ćelije A1:B11):</b></p>
+    <table class="data">
+      <tr><th>Ime i prezime</th><th>Ocena</th></tr>
+      <tr><td>Dimitrije Tomić</td><td>10</td></tr><tr><td>Ana Petrović</td><td>9</td></tr>
+      <tr><td>Nikola Jovanović</td><td>8</td></tr><tr><td>Milica Stanković</td><td>10</td></tr>
+      <tr><td>Luka Ilić</td><td>6</td></tr><tr><td>Jovana Pavlović</td><td>7</td></tr>
+      <tr><td>Stefan Nikolić</td><td>10</td></tr><tr><td>Marija Đorđević</td><td>8</td></tr>
+      <tr><td>Petar Marković</td><td>9</td></tr><tr><td>Teodora Simić</td><td>10</td></tr>
+    </table>
+    <ol>
+      <li class="step"><h3>Otvorite praznu radnu svesku</h3>
+        Pokrenite Excel (Start meni → Excel) i na početnom ekranu kliknite na <b>Blank workbook</b> (Prazna radna sveska).
+        <div class="shot"> <img src = "korak1.png" alt = "Korak 1"> </div></li>
+      <li class="step"><h3>Upišite zaglavlja tabele</h3>
+        Kliknite na ćeliju <b>A1</b> i ukucajte <code>Ime i prezime</code>, pritisnite Tab, ukucajte <code>Ocena</code> u ćeliji <b>B1</b> i pritisnite Enter. Zatim obeležite A1:B1 i na kartici <b>Home</b> kliknite na <b>B</b> (Bold) da zaglavlje bude podebljano.
+        <div class="shot"> <img src = "korak2.png" alt = "Korak 2"> </div></li>
+      <li class="step"><h3>Unesite imena i ocene</h3>
+        Kliknite na <b>A2</b> i redom upišite imena iz tabele iznad, a u kolonu B odgovarajuće ocene (Tab prelazi udesno, Enter u sledeći red). Dimitrije Tomić je u redu 2, a poslednji red je 11 (Teodora Simić). Kolonu A proširite dvoklikom na liniju između zaglavlja kolona A i B.
+        <div class="shot"> <img src = "korak3.png" alt = "Korak 3"> </div></li>
+      <li class="step"><h3>Upišite svoje ime u ćeliju D1</h3>
+        Kliknite na <b>D1</b> i ukucajte <code>Student: Dimitrije Tomić</code>, pa Enter. Ovo ime mora da se vidi na svim narednim slikama.
+        <div class="shot"> <img src = "korak4.png" alt = "Korak 4"> </div></li>
+      <li class="step"><h3>Pripremite polje za traženu ocenu</h3>
+        U <b>D3</b> ukucajte <code>Tražena ocena</code>, a u <b>E3</b> ukucajte <code>10</code>. U <b>D4</b> ukucajte <code>Broj ocena jednakih traženoj</code>. Kolonu D proširite dvoklikom na liniju između zaglavlja kolona D i E.
+        <div class="shot"> <img src = "korak5.png" alt = "Korak 5"> </div></li>
+      <li class="step"><h3>Prva formula: COUNTIF sa referencom na ćeliju</h3>
+        Kliknite na <b>E4</b> i ukucajte <code>=COUNTIF(B2:B11;E3)</code>, pa pritisnite Enter. Prvi argument (B2:B11) je opseg u kome se broji, a drugi (E3) je uslov, odnosno ocena 10. Rezultat u E4 treba da bude <b>4</b> (Dimitrije, Milica, Stefan i Teodora).
+        <div class="shot"> <img src = "korak6.png" alt = "Korak 6"> </div></li>
+      <li class="step"><h3>Druga formula: uslov sa operatorom</h3>
+        U <b>D5</b> ukucajte <code>Broj ocena 9 i većih</code>. Kliknite na <b>E5</b> i ukucajte <code>=COUNTIF(B2:B11;"&gt;=9")</code>, pa Enter. Uslov sa operatorom mora da bude u navodnicima. Rezultat treba da bude <b>6</b>.
+        <div class="shot"> <img src = "korak7.png" alt = "Korak 7"> </div></li>
+      <li class="step"><h3>Treća formula: brojanje teksta</h3>
+        U <b>D6</b> ukucajte <code>Broj pojavljivanja imena</code>. Kliknite na <b>E6</b> i ukucajte <code>=COUNTIF(A2:A11;"Dimitrije Tomić")</code>, pa Enter. Rezultat treba da bude <b>1</b>.
+        <div class="shot"> <img src = "korak8.png" alt = "Korak 8"> </div></li>
+      <li class="step"><h3>Promenite uslov i proverite rezultat</h3>
+        Kliknite na <b>E3</b>, upišite <code>9</code> i pritisnite Enter. Vrednost u E4 se automatski menja na <b>2</b> (Ana i Petar). Zatim upišite <code>8</code>, a rezultat treba da bude <b>2</b> (Nikola i Marija).
+        <div class="shot"> <img src = "korak9.png" alt = "Korak 9"> </div></li>
+    </ol>
+    <div class="calc" aria-label="Probajte sami">
+      <b>Probajte sami:</b> izaberite uslov i vidite šta bi COUNTIF vratio na gornjoj tabeli.<br><br>
+      <select id="cSel" aria-label="Uslov"></select>
+      <button class="btn" id="calcBtn" type="button">Izbroj</button>
+      <p id="calcOut" aria-live="polite" style="margin:12px 0 0"></p>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>E-mail: <b id="mail">dimitrije.tomic225@gmail.com</b></p>
+    <div class="btns">
+      <a class="btn" id="gmailLink" href="#" target="_blank" rel="noopener">Napiši poruku u Gmail-u</a>
+      <a class="btn alt" id="mailtoLink" href="#">Otvori u programu za e-poštu</a>
+      <button class="btn alt" id="copyBtn" type="button">Kopiraj adresu</button>
+    </div>
+    <p id="copyMsg" aria-live="polite" style="color:var(--mute);font-size:15px"></p>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> <span class="js-name">Dimitrije Tomić</span> · <span class="js-index">22/2026</span></footer>
+
+<script>
+  // Ovde izmeni svoje podatke – menjaju se na celoj stranici i na grbu.
+  var STUDENT = { name: "Dimitrije Tomić", index: "22/2026", email: "dimitrije.tomic225@gmail.com" };
+
+  document.querySelectorAll(".js-name").forEach(function(e){ e.textContent = STUDENT.name; });
+  document.querySelectorAll(".js-index").forEach(function(e){ e.textContent = STUDENT.index; });
+  document.getElementById("crestName").textContent = STUDENT.name.toUpperCase();
+  document.getElementById("crestIdx").textContent = "INDEKS " + STUDENT.index;
+  document.title = STUDENT.name + " – lični veb sajt";
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Header: smanji grb kad se skroluje i podesi razmak za sidra
+  var hdr = document.getElementById("hdr");
+  function fitHeader(){
+    var y = window.scrollY;
+    if (y > 150) hdr.classList.add("small");
+    else if (y < 30) hdr.classList.remove("small");
+    document.documentElement.style.setProperty("--hh", hdr.offsetHeight + "px");
+  }
+  window.addEventListener("scroll", fitHeader, {passive:true});
+  window.addEventListener("resize", fitHeader);
+  if (window.ResizeObserver) new ResizeObserver(fitHeader).observe(hdr);
+  fitHeader();
+
+  // E-mail: Gmail, mailto i kopiranje (mailto ne radi ako nema podešen program za e-poštu)
+  document.getElementById("mail").textContent = STUDENT.email;
+  document.getElementById("gmailLink").href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(STUDENT.email);
+  document.getElementById("mailtoLink").href = "mailto:" + STUDENT.email;
+  document.getElementById("copyBtn").addEventListener("click", function(){
+    var msg = document.getElementById("copyMsg");
+    function ok(){ msg.textContent = "Adresa je kopirana: " + STUDENT.email; }
+    function fallback(){
+      var t = document.createElement("textarea"); t.value = STUDENT.email; document.body.appendChild(t); t.select();
+      try { document.execCommand("copy"); ok(); } catch(e){ msg.textContent = "Kopirajte ručno: " + STUDENT.email; }
+      document.body.removeChild(t);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(STUDENT.email).then(ok, fallback);
+    else fallback();
+  });
+
+  // COUNTIF demonstracija
+  var OCENE = [["Dimitrije Tomić",10],["Ana Petrović",9],["Nikola Jovanović",8],["Milica Stanković",10],["Luka Ilić",6],
+               ["Jovana Pavlović",7],["Stefan Nikolić",10],["Marija Đorđević",8],["Petar Marković",9],["Teodora Simić",10]];
+  var USLOVI = ["10", "9", "8", ">=9", ">=7", "<8", "<>10"];
+  var sel = document.getElementById("cSel");
+  USLOVI.forEach(function(u){ var o = document.createElement("option"); o.value = u; o.textContent = u; sel.appendChild(o); });
+  function test(g, u){
+    var m = u.match(/^(>=|<=|<>|>|<|=)?(\d+)$/), op = m[1] || "=", n = Number(m[2]);
+    return op==="="?g===n : op===">="?g>=n : op==="<="?g<=n : op==="<>"?g!==n : op===">"?g>n : g<n;
+  }
+  document.getElementById("calcBtn").addEventListener("click", function(){
+    var u = sel.value, c = OCENE.filter(function(r){ return test(r[1], u); }).length;
+    var arg = /^\d+$/.test(u) ? u : '"' + u + '"';
+    document.getElementById("calcOut").textContent = "=COUNTIF(B2:B11;" + arg + ") vraća " + c;
+  });
+</script>
+</body>
+</html>
